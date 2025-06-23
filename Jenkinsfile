@@ -111,7 +111,7 @@ all:
             sh 'cat inventory1.yml'
 
             // Run playbook with verbose output for debugging
-            sh "ansible-playbook -i inventory.yml -vv play1.yml"
+            sh "ansible-playbook -i inventory1.yml -vv play1.yml"
           }
         }
       }
