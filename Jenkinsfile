@@ -10,8 +10,8 @@ pipeline {
     ANSIBLE_DIR = 'ansible'
   }
 
- /* stages {
-    stage('Terraform Apply') {
+  stages {
+   /* stage('Terraform Apply') {
       steps {
         script {
           withCredentials([[
@@ -126,4 +126,4 @@ all:
       echo 'Pipeline succeeded!'
     }
   }
-/*}
+}
