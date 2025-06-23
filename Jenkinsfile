@@ -108,10 +108,10 @@ all:
 """
 
             // Verify inventory
-            sh 'cat inventory.yml'
+            sh 'cat inventory1.yml'
 
             // Run playbook with verbose output for debugging
-            sh "ansible-playbook -i inventory.yml -vv ${ANSIBLE_DIR}/playbook.yml"
+            sh "ansible-playbook -i inventory.yml -vv play1.yml"
           }
         }
       }
