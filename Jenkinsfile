@@ -10,7 +10,7 @@ pipeline {
     ANSIBLE_DIR = 'ansible'
   }
 
-  stages {
+ /* stages {
     stage('Terraform Apply') {
       steps {
         script {
@@ -30,7 +30,7 @@ pipeline {
           }
         }
       }
-    }
+    } 
 
     stage('Wait for SSH') {
       steps {
@@ -72,7 +72,7 @@ pipeline {
           }
         }
       }
-    }
+    } */
 
     stage('Deploy with Ansible') {
       steps {
@@ -92,7 +92,7 @@ pipeline {
             """
 
             // Create dynamic inventory
-            writeFile file: 'inventory.yml', text: """
+            writeFile file: 'inventory1.yml', text: """
 all:
   hosts:
     rails-server-1:
