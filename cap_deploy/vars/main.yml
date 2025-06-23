@@ -1,0 +1,4 @@
+repo_url: "git@github.com:yourorg/yourrepo.git"
+app_dir: "/var/www/myapp"
+branch_name: "main"
+tag_name: "v1.2.3"
